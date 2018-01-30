@@ -1,5 +1,5 @@
-![](./src/single/rogo/opengraph.white.svg)
-# inkschin lonogara
+![](./src/single/rogo/opengraph.yellow.svg)
+# lonogara inkschin
 
 ## relate
 - [inkscape options](https://inkscape.org/en/doc/inkscape-man.html)
