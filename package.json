@@ -1,19 +1,17 @@
 {
   "scripts": {
-    "pipe": "chin -v",
-    "png:trans": "yarn pipe trans",
-    "png:white": "yarn pipe white",
-    "png:all": "run-s png:trans png:white",
-    "png": "yarn png:white",
-    "pdf:single": "yarn pipe pdf",
-    "pdf:print": "yarn pipe print",
-    "pdf:all": "run-s pdf:single pdf:print",
-    "pdf": "yarn pdf:single",
-    "all": "run-s png:all pdf:all"
+    "pipe": "chin -c -r babel-register",
+    "png": "cross-env CHIN_ENV=png yarn pipe",
+    "pdf": "cross-env CHIN_ENV=pdf yarn pipe",
+    "merge": "cross-env CHIN_ENV=merge yarn pipe",
+    "all": "run-s png pdf merge"
   },
   "devDependencies": {
-    "chin": "^2.1.2",
-    "chin-plugins-inkscape": "https://github.com/kthjm/chin-plugins-inkscape",
-    "npm-run-all": "^4.0.2"
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "chin": "^3.0.1",
+    "chin-plugin-inkscape": "^0.0.2",
+    "cross-env": "^5.1.4",
+    "npm-run-all": "^4.1.2"
   }
 }
