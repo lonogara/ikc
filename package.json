@@ -1,17 +1,16 @@
 {
   "scripts": {
-    "pipe": "chin -c -r babel-register",
-    "png": "cross-env CHIN_ENV=png yarn pipe",
-    "pdf": "cross-env CHIN_ENV=pdf yarn pipe",
-    "merge": "cross-env CHIN_ENV=merge yarn pipe",
-    "all": "run-s png pdf merge"
+    "png": "chin -c -r babel-register",
+    "pdf": "chin -c -r babel-register",
+    "prt": "chin -c -r babel-register",
+    "all": "chin -c -r babel-register"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.6.1",
-    "chin": "^3.0.1",
-    "chin-plugin-inkscape": "^0.0.2",
-    "cross-env": "^5.1.4",
-    "npm-run-all": "^4.1.2"
+    "babel-preset-env": "^1.7.0",
+    "chin": "^3.0.6",
+    "chin-plugin-inkscape": "^0.0.6",
+    "cross-env": "^5.2.0",
+    "npm-run-all": "^4.1.3"
   }
 }
